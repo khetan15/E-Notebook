@@ -1,9 +1,15 @@
+import 'package:fluttersignature/components/NavDrawer.dart';
+
 import 'DrawMe.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttersignature/screens/welcome_screen.dart';
 import 'package:fluttersignature/screens/login_screen.dart';
 import 'package:fluttersignature/screens/registration_screen.dart';
 import 'package:fluttersignature/screens/assignments_screen.dart';
+
+import 'screens/home_screen.dart';
+import 'screens/home_screen.dart';
+import 'screens/home_screen.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -16,6 +22,7 @@ class MyApp extends StatelessWidget {
        WelcomeScreen.id: (context) => WelcomeScreen(),
           LoginScreen.id: (context) => LoginScreen(),
         RegistrationScreen.id: (context) => RegistrationScreen(),
+      HomeScreen.id:(context)=> HomeScreen(),
       AssignmentScreen.id: (context) => AssignmentScreen(),
         DrawMe.id: (context) => DrawMe(),
       },

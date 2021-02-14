@@ -6,6 +6,8 @@ import 'package:fluttersignature/DrawMe.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:fluttersignature/screens/assignments_screen.dart';
 
+import 'home_screen.dart';
+
 class RegistrationScreen extends StatefulWidget {
   static const String id = 'registration_screen';
   @override
@@ -77,7 +79,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     final newUser = await _auth.createUserWithEmailAndPassword(
                         email: email, password: password);
                     if (newUser != null) {
-                      Navigator.pushNamed(context, AssignmentScreen.id);
+                      Navigator.pushNamed(context, HomeScreen.id);
                     }
 
                     setState(() {
