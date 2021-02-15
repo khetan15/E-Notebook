@@ -26,6 +26,84 @@ class _HomeScreenState extends State<HomeScreen> {
           });
         },
       ),
+
+
+      body:Column(children: <Widget>[
+      Row(
+        //ROW 1
+          children: [
+      Container(
+        margin: EdgeInsets.all(8.0),
+        height: 100.0,
+        child: RaisedButton(
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(18.0),
+              side: BorderSide(color: Colors.deepOrange)),
+          onPressed: () {},
+          padding: EdgeInsets.all(10.0),
+          color: Colors.deepOrange,
+         textColor: Colors.white,
+         child: Text("Subject 1",
+             style: TextStyle(fontSize: 39)),
+        ),
+        ),
+            Container(
+              margin: EdgeInsets.all(10.0),
+              height: 100.0,
+              child: RaisedButton(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0),
+                    side: BorderSide(color: Colors.deepOrange)),
+                onPressed: () {},
+                padding: EdgeInsets.all(10.0),
+                color: Colors.deepOrange,
+                textColor: Colors.white,
+                child: Text("Subject 2",
+                style: TextStyle(fontSize: 39)),
+              ),
+            ),
+
+       ],
+      ),
+      Row(
+        //ROW 1
+        children: [
+          Container(
+            margin: EdgeInsets.all(8.0),
+            height: 100.0,
+            child: RaisedButton(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0),
+                  side: BorderSide(color: Colors.deepOrange)),
+              onPressed: () {},
+              padding: EdgeInsets.all(10.0),
+              color: Colors.deepOrange,
+              textColor: Colors.white,
+              child: Text("Subject 3",
+                  style: TextStyle(fontSize: 39)),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.all(10.0),
+            height: 100.0,
+            child: RaisedButton(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0),
+                  side: BorderSide(color: Colors.deepOrange)),
+              onPressed: () {},
+              padding: EdgeInsets.all(10.0),
+              color: Colors.deepOrange,
+              textColor: Colors.white,
+              child: Text("Subject 4",
+                  style: TextStyle(fontSize: 39)),
+            ),
+          ),
+
+        ],
+      ),
+     ],),
     );
+
+
   }
 }
